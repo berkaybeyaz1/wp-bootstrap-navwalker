@@ -33,7 +33,7 @@ Usage
 Update your `wp_nav_menu()` function in `header.php` to use the new walker by adding a "walker" item to the wp_nav_menu array.
 
 ```php
- <?php
+	<?php
             wp_nav_menu( array(
                 'menu'              => 'primary',
                 'theme_location'    => 'primary',
@@ -45,7 +45,7 @@ Update your `wp_nav_menu()` function in `header.php` to use the new walker by ad
                 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                 'walker'            => new wp_bootstrap_navwalker())
             );
-        ?>
+	?>
 ```
 
 Your menu will now be formatted with the correct syntax and classes to implement Bootstrap dropdown navigation. 
